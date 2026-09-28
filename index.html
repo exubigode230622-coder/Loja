@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Loja Simples</h1>
+        <p>Cadastro de produtos</p>
+    </header>
+    <main>
+        <section class="formulario">
+            <h2>Cadastrar produto</h2>
+            <form id="formProduto">
+                <label for="nomeProduto">Nome do produto:</label>
+                <input type="text" id="nomeProduto" required>
+                <label for="precoProduto">Preço:</label>
+                <input type="number" id="precoProduto" step="0.01" min="0" required>
+                <label for="quantidadeProduto">Quantidade:</label>
+                <input type="number" id="quantidadeProduto" min="1" required>
+                <button type="submit" id="botaoFormulario">
+                   
+                </button>
+            </form>
+            <p id="mensagemErro"></p>
+        </section>
+        <section class="lista">
+            <h2>Produtos cadastrados</h2>
+            <p id="contador">Produtos cadastrados: 0</p>
+            <p id="listaVazia">Nenhum produto cadastrado.</p>
+            <ul id="listaProdutos"></ul>
+        </section>
+    </main>
+    <footer id="batataFooter">
+        <p>Loja de Mierda</p>
+        <p>Exubigode.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

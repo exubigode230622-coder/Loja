@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c42020;
+    color: #5f5555;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #222;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.formulario,
+.lista {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#botaoFormulario {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#botaoFormulario:hover {
+    background-color: #444;
+}
+
+#mensagemErro {
+    color: #d00000;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+#contador {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#listaVazia {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+#listaProdutos {
+    list-style: none;
+}
+
+.item-produto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.info-produto {
+    flex: 1;
+}
+
+.info-produto strong {
+    font-size: 17px;
+}
+
+.botoes {
+    display: flex;
+    gap: 8px;
+}
+
+.botoes button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.botao-editar {
+    background-color: #e09b00;
+}
+
+.botao-editar:hover {
+    background-color: #bd8200;
+}
+
+.botao-remover {
+    background-color: #d00000;
+}
+
+.botao-remover:hover {
+    background-color: #a00000;
+}
+
+footer {
+    background-color: #222;
+    color: blueviolet;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+
+    .item-produto {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .botoes {
+        width: 100%;
+    }
+
+    .botoes button {
+        flex: 1;
+    }
+}
